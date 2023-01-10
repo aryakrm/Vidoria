@@ -1,0 +1,28 @@
+{
+  "name": "vidoria",
+  "version": "1.0.0",
+  "description": "Just Watch it",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryakrm/Vidoria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aryakrm/Vidoria/issues"
+  },
+  "homepage": "https://github.com/aryakrm/Vidoria#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.20"
+  }
+}
