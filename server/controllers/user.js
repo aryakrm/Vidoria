@@ -26,7 +26,7 @@ export const deleteUser = async (req, res, next) => {
   if (req.params.id === req.user.id) {
     try {
       await User.findByIdAndDelete(req.params.id);
-      res.status(200).json("Your acount has been deleted");
+      res.status(200).json("Your account has been deleted");
     } catch (err) {
       next(err);
     }
