@@ -12,12 +12,6 @@ export const addComment = async (req, res, next) => {
     next(err);
   }
 };
-export const updateComment = async (req, res, next) => {
-  try {
-  } catch (err) {
-    next(err);
-  }
-};
 export const deleteComment = async (req, res, next) => {
   try {
     const comment = await Comment.findById(res.params.id);
@@ -34,6 +28,8 @@ export const deleteComment = async (req, res, next) => {
 };
 export const getComments = async (req, res, next) => {
   try {
+    const comments = await Comment.find({ videoId: req.video.id });
+    res.status(200).json(comments);
   } catch (err) {
     next(err);
   }
